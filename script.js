@@ -22,3 +22,14 @@ const paneerButterMasala = {
   reason: "Because she shouldn't feel it alone"
 };
 */
+let playing = false;
+
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  if (!playing) {
+    music.play();
+  } else {
+    music.pause();
+  }
+  playing = !playing;
+}
